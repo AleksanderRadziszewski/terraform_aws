@@ -56,7 +56,7 @@ resource "aws_security_group" "mtc_sg" {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
-    cidr_blocks = [aws_vpc.mtc_vpc.cidr_block]
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   egress {
